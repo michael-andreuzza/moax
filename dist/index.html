@@ -1,0 +1,443 @@
+<!-- component -->
+<!DOCTYPE html>
+<html lang="sv" class="scroll">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Motor Optimering Åland</title>
+        <meta name="author" content="Michael Andreuzza">
+        <meta name="keywords" content="keywords,here">
+        <link rel="stylesheet" href="./css/tailwind.css" type="text/css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicons/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicons/android-chrome-256x256.png">
+        <link rel="manifest" href="./favicons/site.webmanifest">
+        <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#010412">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="theme-color" content="#000000">
+        <meta name="keywords" content="Motor Optimering Åland" />
+        <meta name="description" content="Motor Optimering Åland." />
+        <!----- fb,pinterest, google + ----->
+        <meta property="og:title" content="Motor optimering Åland." />
+        <meta property="og:description" content="Motor Optimering Åland." />
+        <meta property="og:image" content="./assets/og.png" />
+        <meta property="og:url" content="https://moax.ax" />
+        <meta property="og:type" content="website" />
+        <!----- Twitter----->
+        <meta name="twitter:title" content="Motor optimering Åland || ." />
+        <meta name="twitter:card" content="Summary" />
+        <meta name="twitter:creator" content="@mike_andreuzza" />
+        <meta property="og:image" content="./assets/twitterOg.png" />
+        <meta name="twitter:url" content="https://moax.ax" />
+        <meta name="twitter:description" content="moax.ax Motor Opitmering Åland" />
+        <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
+    </head>
+
+    <body>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <section class="flex flex-wrap items-center bg-left bg-no-repeat bg-cover "
+            style="background-image: url('./assets/bmw.jpg');">
+            <div class="container w-full h-screen md:w-1/2" style="background: rgba( 255, 255, 255, 0.35 );backdrop-filter: blur( 15px );
+-webkit-backdrop-filter: blur( 15px );">
+                <div>
+                    <div class="w-full px-2 py-4 text-gray-300 transition duration-500 ease-in-out transform lg:pt-6 ">
+                        <div x-data="{ open: false }"
+                            class="flex flex-col w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-24 ">
+                            <div class="flex flex-row items-center justify-between ">
+                                <a href="./index.html"
+                                    class="text-lg font-semibold rounded-lg focus:outline-none focus:shadow-outline">
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2 h-2 p-2 mx-auto mr-2 bg-white rounded-full">
+                                        </div>
+                                        <p
+                                            class="px-4 py-2 mt-2 text-base font-semibold text-white transition duration-500 ease-in-out transform border-b border-transparent md:mt-0 md:ml-auto focus:text-gray-100 hover:border-b-black focus:border focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 hover:text-black">
+                                            Moa.Ax
+                                        </p>
+                                    </div>
+                                </a>
+                                <button class="md:hidden focus:outline-none" @click="open = !open">
+                                    <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
+                                        <path x-show="!open" fill-rule="evenodd"
+                                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                            clip-rule="evenodd"></path>
+                                        <path x-show="open" fill-rule="evenodd"
+                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" style="display: none;"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <nav :class="{'flex': open, 'hidden': !open}"
+                                class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:flex-row lg:ml-auto">
+                                <a class="px-4 py-2 mt-2 text-base font-semibold text-white transition duration-500 ease-in-out transform border-b border-transparent md:mt-0 md:ml-auto focus:text-gray-100 hover:border-b-black focus:border focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 hover:text-black"
+                                    href="./omoss.html">Om Oss</a>
+                                <a class="px-4 py-2 mt-2 text-base font-semibold text-white transition duration-500 ease-in-out transform border-b border-transparent md:mt-0 focus:text-gray-100 hover:border-b-black focus:border focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 hover:text-black"
+                                    href="#services">Tjänster</a>
+                                <a class="px-4 py-2 mt-2 text-base font-semibold text-white transition duration-500 ease-in-out transform border-b border-transparent md:mt-0 focus:text-gray-100 hover:border-b-black focus:border focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 hover:text-black"
+                                    href="#find">Hitta</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-5 lg:mt-12 lg:mx-24">
+                    <h1
+                        class="pt-8 mb-6 text-5xl leading-none tracking-normal text-left text-black text-shadow-xl font-extralight lg:text-left md:text-2xl lg:text-5xl title-font ">
+                        Motor optimeringar till dom flesta
+                        fordon och maskiner.
+                    </h1>
+                    <p
+                        class="mb-6 text-xl leading-relaxed text-left text-black text-shadow-xl lg:text-xl lg:pr-12 xl:text-2xl">
+                        Vi använder oss av världsledande program och utrustning
+                    </p>
+                    <div class="inline-flex items-center justify-start mt-4">
+                        <button
+                            class="flex items-center px-12 py-2 mr-2 font-semibold text-white transition duration-500 ease-in-out transform rounded-full bg-moa-darkOne hover:bg-gray-800 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
+                            Hitta Oss
+                        </button>
+                        <button
+                            class="inline-flex items-center px-4 py-2 font-semibold text-white transition duration-500 ease-in-out transform hover:text-black text-shadow-2xl focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
+                            Läs mer
+                            <div
+                                class="inline-flex items-center w-12 h-12 ml-6 border-2 border-current rounded-full text-shadow-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto " width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <line x1="15" y1="16" x2="19" y2="12" />
+                                    <line x1="15" y1="8" x2="19" y2="12" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <p class="w-full mt-2 mb-8 text-sm text-black">Öppetider: 09:00 - 17:00 .</p>
+                </div>
+            </div>
+            <div class="hidden w-full h-screen bg-center bg-cover md:w-1/2 lg:block">
+            </div>
+        </section>
+        <!-----------Logos------------>
+        <section>
+            <div class="container px-5 py-10 bg-black lg:px-20 md:px-20 ">
+                <div class="flex items-center justify-between ">
+                    <a href="https://turbo.ee/" target="_blank">
+                        <button
+                            class="px-2 transition duration-500 ease-in-out transform opacity-50 hover:opacity-100 focus:opacity-100 focus:outline-none ">
+                            <img class="w-32" s src="https://turbo.ee/image/catalog/logo-turbo-3.png" alt=""
+                                style="max-height: 60px; filter: brightness(0) invert(1);">
+                        </button>
+                    </a>
+                    <a href="https://www.auteltech.com/" target="_blank">
+                        <button
+                            class="px-2 transition duration-500 ease-in-out transform opacity-50 hover:opacity-100 focus:opacity-100 focus:outline-none ">
+                            <img class="w-32" src="https://www.auteltech.com/r/cms/www/default/atImg/header_logo.png"
+                                alt="" style="max-height: 60px; filter: brightness(0) invert(1);">
+                        </button>
+                    </a>
+                    <a href="https://www.kenlift.fi/" target="_blank">
+                        <button
+                            class="px-2 transition duration-500 ease-in-out transform opacity-50 hover:opacity-100 focus:opacity-100 focus:outline-none ">
+                            <img class="w-32" s
+                                src="https://kenlift.fi/_files/200000001-1200912faf/450/KenLift-LOGO-1Cutout.png" alt=""
+                                style="max-height: 60px; filter: brightness(0) invert(1);">
+                        </button>
+                    </a>
+                    <a href="https://www.rst-steel.fi/" target="_blank">
+                        <button
+                            class="px-2 transition duration-500 ease-in-out transform opacity-50 hover:opacity-100 focus:opacity-100 focus:outline-none ">
+                            <img class="w-32" src="https://www.rst-steel.fi/editor_files/image/logo.png" alt=""
+                                style="max-height: 60px; filter: brightness(0) invert(1);">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="w-full h-1 p-0 m-0 transform bg-gray-100"></div>
+            <div class="w-full h-1 p-0 m-0 transform bg-gray-200"></div>
+            <div class="w-full h-1 p-0 m-0 transform bg-gray-300"></div>
+            <div class="w-full h-1 p-0 m-0 transform bg-gray-400"></div>
+            <div class="w-full h-1 p-0 m-0 transform bg-gray-500"></div>
+        </section>
+        <section class="bg-black body-font">
+            <div class="container flex flex-wrap items-end px-5 py-24 mx-auto md:px-10 lg:px-20">
+                <div class="flex flex-col w-full px-2 pt-0 mt-4 text-left lg:w-1/2 md:mb-0">
+                    <h1
+                        class="mb-6 text-5xl leading-none tracking-tighter text-left text-white font-extralight lg:text-left md:text-2xl lg:text-5xl title-font ">
+                        Vad är
+                        <br class="hidden lg:block">
+                        motoroptimering?
+                    </h1>
+                    <p class="mb-6 text-base leading-relaxed text-left text-gray-300">
+                        När man optimerar ett fordon har man för avsikt att öka prestandan, hästkrafter och vridmoment
+                        men även
+                        bränsleförbrukning. Mjukvaran designas av tillverkarna för att motorn ska fungera bra på dåliga
+                        bränslen under hård
+                        belastning och lång tid.
+                    </p>
+                    <p class="text-base leading-relaxed text-left text-gray-300 ">
+                        Ofta sänker biltillverkarna effekten i många bilmodeller med samma motor så att tillverkarna
+                        skall få önskad plats på
+                        marknaden. Som ett resultat av detta tar man sällan ut motorns fulla potential.
+                        En motoroptimering påverkar inte avgasvärdena så som CO- och HC-halter eller övrig elektronisk
+                        utrustning.
+                    </p>
+                </div>
+                <div class="flex flex-col w-full px-2 pt-0 mt-4 text-left lg:w-1/2 md:mb-0">
+                    <div class="flex flex-wrap lg:px-12">
+                        <div class="w-full mb-4 lg:px-8 border-opacity-60">
+                            <div
+                                class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mt-2 text-white border-2 border-indigo-100 rounded-full">
+                                1
+                            </div>
+                            <p class="mt-4 text-base leading-relaxed text-gray-300 ">
+                                Optimering görs endast med hjälp av mjukvara. I 99% av fallen behöver inga delar
+                                uppgraderas eller bytas ut.</p>
+                        </div>
+                        <div class="w-full my-4 lg:px-8 border-opacity-60">
+                            <div
+                                class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mt-2 text-white border-2 border-indigo-100 rounded-full">
+                                2
+                            </div>
+                            <p class="mt-4 text-base leading-relaxed text-gray-300 lg:pr-12">betyder att vissa delar
+                                byts ut –
+                                eller modifieras – för att uppnå ännu högre effekt utan att äventyra driftsäkerheten.
+                            </p>
+                        </div>
+                        <div class="w-full mt-4 lg:px-8 border-opacity-60">
+                            <div
+                                class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mt-2 text-white border-2 border-indigo-100 rounded-full">
+                                3
+                            </div>
+                            <p class="mt-4 text-base leading-relaxed text-gray-300 lg:pr-12">betyder att betydligt
+                                större
+                                modifieringar görs (turbobyte, bränslepump, spridare, MAF, avancerad mjukvara etc.)
+                                vilket
+                                möjliggör stora effektuttag!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full bg-white body-font" id="services">
+            <div class="container px-10 py-16 mx-auto lg:px-20 md:px-16 lg:pt-32">
+                <div class="flex flex-wrap items-start mx-auto text-left">
+                    <div class="flex flex-col justify-start w-full pt-0 mx-auto text-left md:w-1/2 ">
+                        <div class="justify-start mx-auto text-left">
+                            <h1
+                                class="mb-8 text-2xl leading-snug tracking-tighter text-left text-black font-extralight md:text-center lg:text-left md:text-3xl lg:text-5xl">
+                                Reparations
+                                Tjänster Som
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-start w-full pt-0 mx-auto text-left lg:w-1/2">
+                        <div class="flex flex-wrap sm:mb-2 ">
+                            <div class="w-full p-2 md:w-1/2 ">
+                                <div class="flex items-start h-full p-4 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        class="flex-shrink-0 w-6 h-6 mr-4 text-gray-500 bg-opacity-20"
+                                        viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium text-black title-font">Återförsäljare av BR Turbo</span>
+                                </div>
+                            </div>
+                            <div class="w-full p-2 md:w-1/2 ">
+                                <div class="flex items-start h-full p-4 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        class="flex-shrink-0 w-6 h-6 mr-4 text-gray-500 bg-opacity-20"
+                                        viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium text-black title-font">Återförsäljare av AUTEL diagnostik
+                                        utrustning</span>
+                                </div>
+                            </div>
+                            <div class="w-full p-2 md:w-1/2 ">
+                                <div class="flex items-start h-full p-4 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        class="flex-shrink-0 w-6 h-6 mr-4 text-gray-500 bg-opacity-20"
+                                        viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium text-black title-font">Återförsäljare av GSM_START</span>
+                                </div>
+                            </div>
+                            <div class="w-full p-2 md:w-1/2 ">
+                                <div class="flex items-start h-full p-4 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        class="flex-shrink-0 w-6 h-6 mr-4 text-gray-500 bg-opacity-20"
+                                        viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium text-black title-font">Service av KENLIFT invahissar</span>
+                                </div>
+                            </div>
+                            <div class="w-full p-2 md:w-1/2 ">
+                                <div class="flex items-start h-full p-4 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        class="flex-shrink-0 w-6 h-6 mr-4 text-gray-500 bg-opacity-20"
+                                        viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium text-black title-font">Montering av Taxi utrustning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container ">
+                <div
+                    class="grid grid-cols-1 gap-6 px-10 py-12 mx-auto -mt-4 sm:grid-cols-2 xl:grid-cols-4 lg:px-20 md:px-16 ">
+                    <div class="flex p-4 space-x-4 text-black shadow-2xl md:space-x-6">
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="font-black capitalize">Personbilar</p>
+                        </div>
+                    </div>
+                    <div class="flex p-4 space-x-4 text-black shadow-2xl md:space-x-6">
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="font-black capitalize">Paketbil/Husbil
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex p-4 space-x-4 text-black shadow-2xl md:space-x-6">
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="font-black capitalize">Lastbil</p>
+                        </div>
+                    </div>
+                    <div class="flex p-4 space-x-4 text-black shadow-2xl md:space-x-6">
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="font-black capitalize">Entreprenad maskiner</p>
+                        </div>
+                    </div>
+                    <div class="flex p-4 space-x-4 text-black shadow-2xl md:space-x-6">
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="font-black capitalize"> Traktor</p>
+                        </div>
+                    </div>
+                    <div class="flex p-4 space-x-4 text-black shadow-2xl md:space-x-6">
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="font-black capitalize"> ATV</p>
+                        </div>
+                    </div>
+                    <div class="flex p-4 space-x-4 text-black shadow-2xl md:space-x-6">
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="font-black capitalize">inombords &amp; Utombords</p>
+                        </div>
+                    </div>
+                    <div class="flex p-4 space-x-4 text-black shadow-2xl md:space-x-6">
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="font-black capitalize"> Vattenskoter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full bg-black body-font" >
+            <div class="container px-10 py-16 mx-auto lg:px-20 md:px-16">
+
+            <div class="flex flex-wrap -m-4">
+                <div class=" lg:w-1/4 sm:w-1/2">
+                    <div class="relative flex">
+                        <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
+                            src="https://www.drivespark.com/wallimg/360x80/photos/2019-volvo-v60-cross-country/2019-volvo-v60-cross-country-01.jpg">
+                        <div class="relative z-10 w-full px-8 py-20 bg-black bg-opacity-70">
+                            <h2 class="mb-1 text-4xl font-medium tracking-widest text-center text-white title-font">Personbil</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" lg:w-1/4 sm:w-1/2">
+                    <div class="relative flex">
+                        <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
+                            src="https://c4.wallpaperflare.com/wallpaper/63/86/518/volkswagen-transporter-black-volkswagen-van-wallpaper-preview.jpg">
+                        <div class="relative z-10 w-full px-8 py-20 bg-black bg-opacity-70">
+                            <h2 class="mb-1 text-4xl font-medium tracking-widest text-center text-white title-font">Paketbil</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" lg:w-1/4 sm:w-1/2">
+                    <div class="relative flex">
+                        <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuRE6Pjck1h-TEJGADul8ytRtvZjPDjZ6B_l4W9HUkctG2UWukBlkE8bXa-QR18qtlJNg&usqp=CAU">
+                        <div class="relative z-10 w-full px-8 py-20 bg-black bg-opacity-70">
+                            <h2 class="mb-1 text-4xl font-medium tracking-widest text-center text-white title-font">Lastbil</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" lg:w-1/4 sm:w-1/2">
+                    <div class="relative flex">
+                        <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
+                            src="https://wallpaperaccess.com/full/1461722.jpg">
+                        <div class="relative z-10 w-full px-8 py-20 bg-black bg-opacity-70">
+                            <h2 class="mb-1 text-4xl font-medium tracking-widest text-center text-white title-font">Entreprenad Maskiner</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" lg:w-1/4 sm:w-1/2">
+                    <div class="relative flex">
+                        <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
+                            src="https://dummyimage.com/600x360/000000/000000">
+                        <div class="relative z-10 w-full px-8 py-20 bg-black bg-opacity-70">
+                            <h2 class="mb-1 text-4xl font-medium tracking-widest text-center text-white title-font">THE SUBTITLE</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" lg:w-1/4 sm:w-1/2">
+                    <div class="relative flex">
+                        <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
+                            src="https://dummyimage.com/600x360/000000/000000">
+                        <div class="relative z-10 w-full px-8 py-20 bg-black bg-opacity-70">
+                            <h2 class="mb-1 text-4xl font-medium tracking-widest text-center text-white title-font">THE SUBTITLE</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" lg:w-1/4 sm:w-1/2">
+                    <div class="relative flex">
+                        <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
+                            src="https://dummyimage.com/600x360/000000/000000">
+                        <div class="relative z-10 w-full px-8 py-20 bg-black bg-opacity-70">
+                            <h2 class="mb-1 text-4xl font-medium tracking-widest text-center text-white title-font">THE SUBTITLE</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" lg:w-1/4 sm:w-1/2">
+                    <div class="relative flex">
+                        <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
+                            src="https://dummyimage.com/600x360/000000/000000">
+                        <div class="relative z-10 w-full px-8 py-20 bg-black bg-opacity-70">
+                            <h2 class="mb-1 text-4xl font-medium tracking-widest text-center text-white title-font">THE SUBTITLE</h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    </body>
+
+</html>
