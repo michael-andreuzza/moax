@@ -47,17 +47,10 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
-        trueGray: colors.trueGray,
       red: colors.red,
-      coolGray:colors.coolGray,
-      blueGray: colors.blueGray,
-      lightBlue: colors.lightBlue,
-      blue: colors.blue,
-        rose: colors.rose,
-        moa: {
-        darkTwo: '#212224',
-        darkOne: '#101212',
 
+      blue: colors.blue,
+       
       },
 
       },
